@@ -9,5 +9,5 @@ part_emitter_region(starfield, star_emitter,
 					obj_player.y - 3000, obj_player.y + 3000, 
 					ps_shape_ellipse, eDist);
 					
-part_emitter_burst(starfield, star,star_emitter, 3500);
+part_emitter_burst(starfield, star,star_emitter, global.stars);
 alarm[0] = room_speed;

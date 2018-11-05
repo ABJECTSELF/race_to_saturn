@@ -1,11 +1,8 @@
-//Set Game Speed.
-game_set_speed(120,gamespeed_fps);
 //Stop current sounds.
 audio_stop_all();
 //Play music.
 audio_play_sound(mus_landsea, 5, false);
 //Set Global variables.
-global.difficulty = 2;		//Difficulty setting.
 global.menu_type = 0;		//Main menu mode.
 global.menu_escape = false;	//Enable/disable escape menu.
 global.menu_gameover = false;//Enable game over screen;
@@ -18,11 +15,8 @@ global.pwr = 100;			//Player's current power.
 global.fuel = 100;			//Player's current fuel.
 global.frate = 0;		//Rate at which fuel is expended.
 global.prate = 0;		//Rate at which power is expended.
-global.mapmode = false;		//Whether the solar map is active.
-global.max_dist = 7500;		//Maximum distance an entity can be from the player, in pixels.
-global.max_ents = 30;		//Maximum number of entities that may be active at a time.
-global.ents = 0;			//Current number of active entities in the area.
 global.pulse = 100;			//Current number of Impulse charges
 global.max_pulse = 100;		//Maximum number of Impulse charges.
-global.p_target = 0;		//Current planet target
-global.name = "Player"	//Player's name for scoreboard.
+
+
+	global.song = mus_landsea;	//The currently-active music track;

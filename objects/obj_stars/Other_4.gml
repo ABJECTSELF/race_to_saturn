@@ -25,7 +25,7 @@ part_emitter_region(starfield, star_emitter,
 					obj_player.y - 2500, obj_player.y + 2500, 
 					ps_shape_ellipse, ps_distr_gaussian);
 					
-part_emitter_burst(starfield, star,star_emitter, 3500);
+part_emitter_burst(starfield, star,star_emitter, global.stars);
 /*
 part_emitter_region(starfield, star_emitter,
 					obj_player.x - 2500, obj_player.x + 2500,

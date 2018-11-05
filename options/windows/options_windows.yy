@@ -3,8 +3,8 @@
     "modelName": "GMWindowsOptions",
     "mvc": "1.0",
     "name": "Windows",
-    "option_windows_allow_fullscreen_switching": false,
-    "option_windows_borderless": true,
+    "option_windows_allow_fullscreen_switching": true,
+    "option_windows_borderless": false,
     "option_windows_company_info": "SKATEshop",
     "option_windows_copy_exe_to_dest": false,
     "option_windows_copyright_info": "(c) 2018 CompanyName",
@@ -20,7 +20,7 @@
     "option_windows_license": "${base_options_dir}\\windows\\installer\\license.txt",
     "option_windows_nsis_file": "${base_options_dir}\\windows\\installer\\nsis_script.nsi",
     "option_windows_product_info": "Made in GameMaker Studio 2",
-    "option_windows_resize_window": false,
+    "option_windows_resize_window": true,
     "option_windows_save_location": 0,
     "option_windows_scale": 0,
     "option_windows_sleep_margin": 10,
@@ -29,7 +29,7 @@
     "option_windows_texture_page": "2048x2048",
     "option_windows_use_splash": false,
     "option_windows_version": {
-        "build": 1,
+        "build": 3,
         "major": 0,
         "minor": 4,
         "revision": 0

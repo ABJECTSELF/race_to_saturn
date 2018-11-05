@@ -9,7 +9,7 @@ var s_name = "";
 
 //Draw message window
 draw_set_alpha(1);
-draw_sprite_ext(spr_window, image_index, hcenter, vcenter, 1.3, 1.5, image_angle, image_blend, 1);
+draw_sprite_ext(spr_window, image_index, hcenter, vcenter, 1.3, 1.5, image_angle, image_blend, 0.80);
 
 //Draw the top bar text.
 draw_set_alpha(1);
@@ -70,11 +70,10 @@ draw_text(hcenter*0.85, vcenter*1.10, sMode);
 //Draw Sprite preview box.
 //Later, we'll add the ability to change the player's appearance.
 draw_set_color(c_black);
-draw_rectangle(hcenter*1.10, vcenter*1.03, hcenter*1.20, vcenter*0.91, false);
-draw_sprite(obj_player.sprite_index, image_index, hcenter*1.15, vcenter*0.97);
+draw_GUIbox(hcenter*1.15, vcenter*0.97, 75, 75, "", obj_player.sprite_index, c_black, c_black, false);
 draw_set_color(c_white);
 draw_text(hcenter*1.15, vcenter*0.83, "PROBE");
-draw_text(hcenter*1.15, vcenter*1.06, "Cassini MkII");
+draw_text(hcenter*1.15, vcenter*1.07, "Cassini MkII");
 
 //Draw arrows to serve as selection buttons to right and left of preview box.
 var color_left = c_blue;	//Default color for left button.

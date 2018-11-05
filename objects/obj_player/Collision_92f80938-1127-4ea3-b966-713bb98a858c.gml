@@ -19,6 +19,7 @@ else if phy_speed < 0.5 && is_refueling = false{
 if global.difficulty >= 2 && phy_speed > 2.5 && is_refueling == false && end_game == false{
 	effect_create_below(ef_explosion, x, y, 4.0, c_orange);
 	audio_play_sound(sfx_playerdeath, 10, false);
+	audio_sound_gain(sfx_playerdeath, global.volume_sfx, 0);
 	image_alpha = 0;
 	phy_active = false;
 	global.fuel = 0;

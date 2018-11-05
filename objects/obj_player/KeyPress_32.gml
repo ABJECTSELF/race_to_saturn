@@ -23,3 +23,4 @@ with (obj_camera) shake = 20;
 
 //Play Sound;
 audio_play_sound(sfx_impulse, 1, false);
+audio_sound_gain(sfx_impulse, global.volume_sfx, 0);

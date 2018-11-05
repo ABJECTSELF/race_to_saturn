@@ -46,3 +46,5 @@ if (thrust_sfx == false){
 	audio_play_sound(sfx_thrust, 1, true);
 	thrust_sfx = true;
 }
+//Set thrust volume to global sfx volume
+audio_sound_gain(sfx_thrust, global.volume_sfx, 0);

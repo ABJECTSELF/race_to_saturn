@@ -13,3 +13,7 @@ instance_create_layer(x+random_range(-20, 20), y+random_range(-20,20), layer, ob
 //Play sounds.
 audio_play_sound_at(sfx_explosion, x, y, 0, 1000, 3000, 1, false, 1);
 audio_play_sound_at(sfx_alien_scream, x, y, 0, 500, 1500, 1, false, 1);
+
+//Set volumes
+audio_sound_gain(sfx_explosion, global.volume_sfx, 0);
+audio_sound_gain(sfx_alien_scream, global.volume_sfx, 0);

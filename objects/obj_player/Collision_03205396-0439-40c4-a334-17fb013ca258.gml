@@ -20,6 +20,7 @@ if global.difficulty >= 2 && phy_speed > 2.5 && is_refueling == false && end_gam
 	effect_create_below(ef_explosion, x, y, 4.0, c_orange);
 	image_alpha = 0;	
 	audio_play_sound(sfx_playerdeath, 10, false);
+	audio_sound_gain(sfx_playerdeath, global.volume_sfx, 0);
 	global.fuel = 0;
 	global.pwr = 0;	
 	end_game = true;

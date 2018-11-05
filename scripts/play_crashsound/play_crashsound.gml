@@ -12,4 +12,5 @@ else if (nRdm == 3)
 	
 //Play the selected sound.
 audio_play_sound(sSfx, 10, false);
+audio_sound_gain(sSfx, global.volume_sfx, 0);
 audio_sound_pitch(sSfx, random_range(0.6, 1.4));

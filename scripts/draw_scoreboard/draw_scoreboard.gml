@@ -8,7 +8,7 @@ var vcenter = vtotal/2;
 n_count = 0//Counting variable, start at 0.
 p_count = 1//Player variable, start at 1.
 
-draw_sprite_ext(spr_window, image_index, hcenter, vcenter, 3, 4, image_angle, image_blend, 1);
+draw_sprite_ext(spr_window, image_index, hcenter, vcenter, 3, 4, image_angle, c_black, 0.75);
 
 //Create the back button.
 	draw_set_color(c_navy);

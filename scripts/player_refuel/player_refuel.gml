@@ -12,4 +12,6 @@ if global.fuel < fmax{ //Check that we need fuel
 
 if (global.pulse < pmax){ //Check that we need pulse.
 	global.pulse += 1;
-	audio_play_sound(sfx_recharge, 1, false);}
+	audio_play_sound(sfx_recharge, 1, false);
+	audio_sound_gain(sfx_recharge, global.volume_sfx, 0);
+	}

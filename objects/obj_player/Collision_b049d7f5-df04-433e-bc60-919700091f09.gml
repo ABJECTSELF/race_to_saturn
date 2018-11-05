@@ -7,6 +7,7 @@ effect_create_below(ef_firework, x, y, 5.0, c_orange);
 if global.difficulty >= 2 && end_game == false{
 	effect_create_below(ef_explosion, x, y, 4.0, c_orange);
 	audio_play_sound(sfx_playerdeath, 10, false);
+	audio_sound_gain(sfx_playerdeath, global.volume_sfx, 0);
 	image_alpha = 0;
 	phy_active = false;
 	global.fuel = 0;

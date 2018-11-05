@@ -8,12 +8,13 @@ var text_bar = "";
 var text_body = "";
 var menu = false; //Deactivate message window until activated by a menu type.
 var buttons = 0; //0 = Buttons disabled. 1 = Quit/Restart buttons 2 = Continue to Scoreboard button.
+				//3 = Open Options window.
 
 //Set parameters for Escape menu.
 if global.menu_escape == true{
 	menu = true;
 	text_bar = "Race to Saturn";
-	text_body = "Quit game?";
+	text_body = "";
 	buttons = 1;
 }
 
@@ -53,11 +54,26 @@ draw_text(hcenter, vcenter*0.92, text_body);
 if buttons = 0
 	return;
 
+if global.menu_type == 1{//Open Options window and stop here
+	menu_options();
+	return;
+}
+
 //Draw buttons.
-if buttons = 1{ //Quit game: Yes or no
+if buttons = 1{ //Quit game and Option.
 	draw_set_color(c_navy);
+	draw_button(hcenter*0.92, vcenter*0.90, hcenter * 1.08, vcenter*0.98, true);
 	draw_button(hcenter * 0.82, vcenter *1.05, hcenter * 0.92, vcenter *1.15, true);
 	draw_button(hcenter * 1.08, vcenter *1.05, hcenter * 1.18, vcenter *1.15, true);
+		//Options button
+		if point_in_rectangle(window_mouse_get_x(),window_mouse_get_y(),
+								hcenter*0.92, vcenter*0.90,
+								hcenter * 1.08, vcenter*0.98){
+			draw_button(hcenter*0.92, vcenter*0.90, hcenter * 1.08, vcenter*0.98, false);			
+			if mouse_check_button_released(mb_left){
+				global.menu_type = 1;				
+				}
+			}		
 		//Yes button
 		if point_in_rectangle(window_mouse_get_x(),window_mouse_get_y(),
 								hcenter * 0.82, vcenter *1.05,
@@ -77,14 +93,15 @@ if buttons = 1{ //Quit game: Yes or no
 				global.menu_escape = false;				
 			}
 	draw_set_color(c_white);
-	draw_text(hcenter*0.87, vcenter*1.08, "Yes");
-	draw_text(hcenter*1.13, vcenter*1.08, "No");
+	draw_text(hcenter, vcenter*0.92, "Options");
+	draw_text(hcenter*0.87, vcenter*1.08, "Quit");
+	draw_text(hcenter*1.13, vcenter*1.08, "Back");
 }
 
-if buttons = 2{ //Go to Scoreboard.
+if buttons = 2{ //Go to main menu.
 	draw_set_color(c_navy);
 	draw_button(hcenter * 0.90, vcenter*1.05, hcenter * 1.10, vcenter *1.15, true);	
-		//Scoreboard button
+		//Accept button
 		if point_in_rectangle(window_mouse_get_x(),window_mouse_get_y(),
 								hcenter * 0.90, vcenter*1.05,
 								hcenter * 1.10, vcenter *1.15){
