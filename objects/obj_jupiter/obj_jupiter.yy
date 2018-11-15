@@ -15,6 +15,62 @@
             "objectId": "76b4a305-bcb0-4fc2-bb23-69bdf984bacc",
             "propertyId": "dd1a1aed-c463-488b-8e03-e32d8aacdebd",
             "value": "Jupiter"
+        },
+        {
+            "id": "a58b7cbb-442c-4467-8bb8-301e482f7f67",
+            "modelName": "GMOverriddenProperty",
+            "mvc": "1.0",
+            "objectId": "76b4a305-bcb0-4fc2-bb23-69bdf984bacc",
+            "propertyId": "431d984b-be42-4195-a9ab-54f42ce50fda",
+            "value": "Planet, Gas Giant"
+        },
+        {
+            "id": "e5ee2cb9-64ce-4bb9-8584-c05de9dfa405",
+            "modelName": "GMOverriddenProperty",
+            "mvc": "1.0",
+            "objectId": "76b4a305-bcb0-4fc2-bb23-69bdf984bacc",
+            "propertyId": "27808736-7cd6-404d-8a2a-b53f5de9fc8b",
+            "value": "142984"
+        },
+        {
+            "id": "2a076df5-ad87-4c7e-8209-4ef435beb63e",
+            "modelName": "GMOverriddenProperty",
+            "mvc": "1.0",
+            "objectId": "76b4a305-bcb0-4fc2-bb23-69bdf984bacc",
+            "propertyId": "543080c0-95d8-4a74-a5f4-cb7c8081b2a3",
+            "value": "1.326"
+        },
+        {
+            "id": "fe3f24d0-4730-473d-8aed-af32144ef2e1",
+            "modelName": "GMOverriddenProperty",
+            "mvc": "1.0",
+            "objectId": "76b4a305-bcb0-4fc2-bb23-69bdf984bacc",
+            "propertyId": "0b31d282-0ddc-469d-a6c9-b9d8718e8326",
+            "value": "24.79"
+        },
+        {
+            "id": "02044b89-81f8-446d-bdd8-018eb1c0c6a6",
+            "modelName": "GMOverriddenProperty",
+            "mvc": "1.0",
+            "objectId": "76b4a305-bcb0-4fc2-bb23-69bdf984bacc",
+            "propertyId": "967c7378-91f8-45ad-85af-14284e16418f",
+            "value": "168"
+        },
+        {
+            "id": "3e644bc0-5026-475e-8a77-da77717c87ac",
+            "modelName": "GMOverriddenProperty",
+            "mvc": "1.0",
+            "objectId": "76b4a305-bcb0-4fc2-bb23-69bdf984bacc",
+            "propertyId": "895477ef-cce4-45d9-92e5-3accc0608ec6",
+            "value": "Volatile Atmosphere"
+        },
+        {
+            "id": "cbdeed44-7d03-4867-989f-34f1091bc341",
+            "modelName": "GMOverriddenProperty",
+            "mvc": "1.0",
+            "objectId": "76b4a305-bcb0-4fc2-bb23-69bdf984bacc",
+            "propertyId": "95ce173a-4f6a-49a9-81e9-077a81c0d7f2",
+            "value": "3"
         }
     ],
     "parentObjectId": "76b4a305-bcb0-4fc2-bb23-69bdf984bacc",

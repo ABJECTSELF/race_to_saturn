@@ -1,5 +1,4 @@
-/// @description Insert description here
-// You can write your code in this editor
+/// @description Fade in/out arrow
 if global.guide_alpha = 0.75
 	alpha_dec = true;
 
@@ -11,3 +10,4 @@ if alpha_dec == true
 
 else
 	global.guide_alpha += 0.005;
+	

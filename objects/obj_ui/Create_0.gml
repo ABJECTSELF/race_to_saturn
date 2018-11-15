@@ -6,6 +6,7 @@ game_over = false;
 game_won = false;
 game_time_second = 0;
 game_time_minute = 0;
+init_depth = depth;
 
 //Start timer
 alarm[0] = room_speed;

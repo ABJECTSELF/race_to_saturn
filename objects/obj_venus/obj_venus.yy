@@ -23,6 +23,86 @@
             "objectId": "76b4a305-bcb0-4fc2-bb23-69bdf984bacc",
             "propertyId": "dd1a1aed-c463-488b-8e03-e32d8aacdebd",
             "value": "Venus"
+        },
+        {
+            "id": "f28e6ced-625c-461d-bf55-8aad97399054",
+            "modelName": "GMOverriddenProperty",
+            "mvc": "1.0",
+            "objectId": "76b4a305-bcb0-4fc2-bb23-69bdf984bacc",
+            "propertyId": "431d984b-be42-4195-a9ab-54f42ce50fda",
+            "value": "Planet, Terrestrial"
+        },
+        {
+            "id": "e09344d7-44c0-4b98-895c-7e393712198d",
+            "modelName": "GMOverriddenProperty",
+            "mvc": "1.0",
+            "objectId": "76b4a305-bcb0-4fc2-bb23-69bdf984bacc",
+            "propertyId": "27808736-7cd6-404d-8a2a-b53f5de9fc8b",
+            "value": "38025"
+        },
+        {
+            "id": "d535ba55-75fc-4754-a929-e5b357427fcc",
+            "modelName": "GMOverriddenProperty",
+            "mvc": "1.0",
+            "objectId": "76b4a305-bcb0-4fc2-bb23-69bdf984bacc",
+            "propertyId": "543080c0-95d8-4a74-a5f4-cb7c8081b2a3",
+            "value": "5.234"
+        },
+        {
+            "id": "a4c2c607-42ed-4833-8601-98ac196e0ab9",
+            "modelName": "GMOverriddenProperty",
+            "mvc": "1.0",
+            "objectId": "76b4a305-bcb0-4fc2-bb23-69bdf984bacc",
+            "propertyId": "0b31d282-0ddc-469d-a6c9-b9d8718e8326",
+            "value": "8.87"
+        },
+        {
+            "id": "552e5577-1208-44a2-b6d5-00602a8a9afb",
+            "modelName": "GMOverriddenProperty",
+            "mvc": "1.0",
+            "objectId": "76b4a305-bcb0-4fc2-bb23-69bdf984bacc",
+            "propertyId": "967c7378-91f8-45ad-85af-14284e16418f",
+            "value": "737"
+        },
+        {
+            "id": "a69b1bf0-624f-4742-9cd1-c5a062c3116d",
+            "modelName": "GMOverriddenProperty",
+            "mvc": "1.0",
+            "objectId": "76b4a305-bcb0-4fc2-bb23-69bdf984bacc",
+            "propertyId": "895477ef-cce4-45d9-92e5-3accc0608ec6",
+            "value": "Corrosive Atmosphere"
+        },
+        {
+            "id": "a5a7ed1d-7049-4cb2-853a-90dcc5497344",
+            "modelName": "GMOverriddenProperty",
+            "mvc": "1.0",
+            "objectId": "76b4a305-bcb0-4fc2-bb23-69bdf984bacc",
+            "propertyId": "95ce173a-4f6a-49a9-81e9-077a81c0d7f2",
+            "value": "2"
+        },
+        {
+            "id": "6bde52ac-c5ba-41dc-b5a4-f36c0fc94d6a",
+            "modelName": "GMOverriddenProperty",
+            "mvc": "1.0",
+            "objectId": "76b4a305-bcb0-4fc2-bb23-69bdf984bacc",
+            "propertyId": "8c825c62-696a-4ee8-8b12-ad33ee0401f4",
+            "value": "h"
+        },
+        {
+            "id": "b387863c-6c68-45e8-9ab7-af6873b82d18",
+            "modelName": "GMOverriddenProperty",
+            "mvc": "1.0",
+            "objectId": "76b4a305-bcb0-4fc2-bb23-69bdf984bacc",
+            "propertyId": "596582a2-7917-4937-8d12-ccbd7535331b",
+            "value": "ar"
+        },
+        {
+            "id": "86ea7fa8-e778-47dc-83c7-23341853fb02",
+            "modelName": "GMOverriddenProperty",
+            "mvc": "1.0",
+            "objectId": "76b4a305-bcb0-4fc2-bb23-69bdf984bacc",
+            "propertyId": "0c7ed306-0d92-46bd-bf0e-e2011ab312db",
+            "value": "o"
         }
     ],
     "parentObjectId": "76b4a305-bcb0-4fc2-bb23-69bdf984bacc",

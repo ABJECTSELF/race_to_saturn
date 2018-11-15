@@ -2,7 +2,7 @@
 //Set up particle system.
 
 starfield = part_system_create();
-part_system_depth(starfield, 40)
+part_system_depth(starfield, 499)
 
 //Create star
 star = part_type_create();

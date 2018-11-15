@@ -3,14 +3,19 @@
 if !object_exists(obj_player)
 	return;		//Stop here if there is no player object.
 
-draw_set_halign(fa_right);
 
-//Draw map if shift is pressed.
-if (keyboard_check(vk_shift))
+//Draw map at a lower depth if shift is pressed.
+if (keyboard_check(vk_shift)){
+	depth = 1000
 	draw_map();
+	}
+else
+	//Reset depth if map is inactive.
+	depth = init_depth;
 
 //Show player's current speed in KM/S.
 //Draw text outine
+draw_set_halign(fa_right);
 draw_set_colour(c_black);
 draw_set_font(fnt_spd_outline);
 draw_text(
@@ -94,7 +99,7 @@ with (obj_player){
 					0.25, 1, arw_angle,
 					image_blend, global.guide_alpha);
 }
-
+				
 //Draw map arrow
 if global.mapmode == true{
 	draw_sprite_ext(spr_arw_ylw, 0, obj_player.x, obj_player.y,

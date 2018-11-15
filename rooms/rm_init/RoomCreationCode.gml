@@ -21,10 +21,12 @@ global.pulse = 100;			//Current number of Impulse charges
 global.max_pulse = 100;		//Maximum number of Impulse charges.
 global.p_target = 0;		//Current planet target
 global.name = "Player"	//Player's name for scoreboard.
+global.mouseTarget = obj_earth; //Targeted scan object.
 
 	global.stars = 3000;		//Number of stars per second.
 	global.difficulty = 2;		//Difficulty setting.
 	global.volume_mus = 1;		//Volume for music.
 	global.volume_sfx = 1;		//Volume for sound effects.
 
-
+//Change game cursor.
+cursor_sprite = spr_ring_green;

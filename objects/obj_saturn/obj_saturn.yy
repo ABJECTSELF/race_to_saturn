@@ -15,6 +15,54 @@
             "objectId": "76b4a305-bcb0-4fc2-bb23-69bdf984bacc",
             "propertyId": "dd1a1aed-c463-488b-8e03-e32d8aacdebd",
             "value": "Saturn"
+        },
+        {
+            "id": "ca9a07e7-7221-4dcc-9c22-4ec1bfda47fe",
+            "modelName": "GMOverriddenProperty",
+            "mvc": "1.0",
+            "objectId": "76b4a305-bcb0-4fc2-bb23-69bdf984bacc",
+            "propertyId": "431d984b-be42-4195-a9ab-54f42ce50fda",
+            "value": "Planet, Gas Giant"
+        },
+        {
+            "id": "f5756725-d7b7-486e-a0dd-ff1cba818e13",
+            "modelName": "GMOverriddenProperty",
+            "mvc": "1.0",
+            "objectId": "76b4a305-bcb0-4fc2-bb23-69bdf984bacc",
+            "propertyId": "27808736-7cd6-404d-8a2a-b53f5de9fc8b",
+            "value": "378675"
+        },
+        {
+            "id": "2dc2ddf0-b7a4-4f18-86c7-56d081198faf",
+            "modelName": "GMOverriddenProperty",
+            "mvc": "1.0",
+            "objectId": "76b4a305-bcb0-4fc2-bb23-69bdf984bacc",
+            "propertyId": "543080c0-95d8-4a74-a5f4-cb7c8081b2a3",
+            "value": "0.687"
+        },
+        {
+            "id": "fbd0c5c7-b916-49c7-a2d3-c37712231273",
+            "modelName": "GMOverriddenProperty",
+            "mvc": "1.0",
+            "objectId": "76b4a305-bcb0-4fc2-bb23-69bdf984bacc",
+            "propertyId": "0b31d282-0ddc-469d-a6c9-b9d8718e8326",
+            "value": "10.44"
+        },
+        {
+            "id": "17da9492-87cb-40bc-a6de-91bbac05ca9f",
+            "modelName": "GMOverriddenProperty",
+            "mvc": "1.0",
+            "objectId": "76b4a305-bcb0-4fc2-bb23-69bdf984bacc",
+            "propertyId": "967c7378-91f8-45ad-85af-14284e16418f",
+            "value": "134"
+        },
+        {
+            "id": "a1f35d4b-aea9-41d8-8064-78928d83f05f",
+            "modelName": "GMOverriddenProperty",
+            "mvc": "1.0",
+            "objectId": "76b4a305-bcb0-4fc2-bb23-69bdf984bacc",
+            "propertyId": "895477ef-cce4-45d9-92e5-3accc0608ec6",
+            "value": "Volatile Atmosphere"
         }
     ],
     "parentObjectId": "76b4a305-bcb0-4fc2-bb23-69bdf984bacc",

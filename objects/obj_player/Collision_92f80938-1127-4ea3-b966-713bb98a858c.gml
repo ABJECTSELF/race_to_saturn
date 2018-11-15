@@ -13,6 +13,7 @@ if phy_speed > 1.5{
 else if phy_speed < 0.5 && is_refueling = false{
 	alarm[0] = room_speed/2;
 	is_refueling = true
+	other.alarm[0] = room_speed/2;
 }
 		
 //Destroy probe if we're fast enough and on Normal mode or higher.

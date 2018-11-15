@@ -7,7 +7,8 @@
         "da79e98f-60a4-4ede-928e-947458bb3e7d",
         "db288806-e98a-44d5-b5a7-9fc972fedbee",
         "e8982e95-cc8b-4e85-96e4-4c0569966a65",
-        "e2fbe4a1-600a-4d98-9c63-86d16f538996"
+        "e2fbe4a1-600a-4d98-9c63-86d16f538996",
+        "76974a8a-6731-44c7-bf88-8cb2dee1174b"
     ],
     "filterType": "GMSprite",
     "folderName": "Objects",

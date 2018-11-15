@@ -1,4 +1,4 @@
-/// @description pull_player()
+/// @description pull_player
 //Simulate gravity within orbit range.
 var source = instance_find(p_id, 0);
 var range = source.sprite_width;
@@ -11,7 +11,7 @@ var grav = 0;
 	by the range value to produce a percentage of
 	gravitation strength at that range.
 */	
-if (distance_to_object(obj_player) < range){
+if (distance_to_object(obj_player) < range){//Player is in orbit range.
 	grav = range - dist;
 	grav = grav/range;
 	grav = source.localgrav * grav;
@@ -19,18 +19,28 @@ if (distance_to_object(obj_player) < range){
 		physics_apply_force(x, y,
 		lengthdir_x(grav, angle), 
 		lengthdir_y(grav, angle));	
+		}	
+/*	To scan an object, the player must complete a full 360 orbit
+	of the object. To do this, we record the angle the player enters
+	orbit, then each step update the player's current angle to the
+	object and compare the difference with the previously recorded
+	angle, adding that angle to a sum. Once the sum hits 360,
+	the object is scanned.
+*/
+
+	if (in_orbit == false && p_id.scanned == false){ //Player is entering orbit for the first time.
+		in_orbit = true
+		orbit_angle = point_direction(x, y, obj_player.x, obj_player.y);	
 	}
-	//Add this planet to star map and award 1000 points if it is not explored.
-	if p_id.explored == false && p_id != obj_sun{
-		p_id.explored = true;
-		score += 1000;
-		audio_play_sound(sfx_success, 10, false);
-		}
-		
-	//Update planet coordinates if this is the current target.
-	if global.planet[global.p_target] == p_id && global.p_target < array_length_1d(global.planet) - 1{
-		while global.planet[global.p_target].explored == true 
-			global.p_target++; //Find the next unexplored planet and set as target.
+	else{	//Player is continuing orbit.
+		p_id.isScanning = true; //Player scans object while orbiting.
+		orbit_total = abs(angle_difference(orbit_angle, point_direction(x, y, obj_player.x, obj_player.y)));
+		if (orbit_total >= 179)		//NOTE: I'm definitely cheating here.
+			orbit_zenith = true;	//If there's an algorithmic way to determine when a 360 circle is completed
+		if (orbit_zenith == true)	//Without the use of extra variables, replace this here.
+			orbit_total = 360 - orbit_total;
+		p_id.percentScanned = orbit_total/360;//Pass scanning progress to planet.
+	//orbit_angle = point_direction(x, y, obj_player.x, obj_player.y);
 	}
 	//Recharge if source object is sun
 	if p_id == obj_sun && obj_player.is_recharging == false{
@@ -40,7 +50,12 @@ if (distance_to_object(obj_player) < range){
 		}	
 	}
 }
-
+else{ //Player is not in orbit range.
+	in_orbit = false;
+	orbit_zenith = false;
+	p_id.isScanning = false;
+}
+	
 //Pulse orbit color
 if orb_alpha = 0.4
 	alpha_dec = true;
@@ -53,3 +68,4 @@ if alpha_dec == true
 
 else
 	orb_alpha += 0.001;
+	

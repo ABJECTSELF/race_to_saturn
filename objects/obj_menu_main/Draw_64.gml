@@ -16,7 +16,7 @@ var button;
 if global.menu_type == 0{
 	draw_text(
 		htotal * 0.55,
-		vtotal * 0.25, "v0.43");	
+		vtotal * 0.25, "v0.50");	
 	draw_text(
 		htotal * 0.25,
 		vtotal * 0.30, "by Jonathan Cwiok");	
@@ -140,8 +140,10 @@ if global.menu_type == 3{
 					 + "-Press W to fire main thrusters and A and D to fire side thrusters\n"
 					 + "-Press Space to fire an Impulse\n"
 					 + "-Press Shift to view the Star Map\n"
+					 + "-Complete a full orbit of a planet to scan it\n"
 					 + "-Orbit each target planet to learn Saturn's location\n"
-					 + "-Land on a terran planet to restore fuel\n"
+					 + "-Land on a terran planet to restore fuel and collect elements\n"
+					 + "-Use elements to synthesize power, fuel and impulses on the go.\n"
 					 + "-Orbit the Sun to restore power\n"
 					 + "-Avoid colliding with obstacles\n"
 					 + "-Careful not to land on Jupiter or the Sun!");

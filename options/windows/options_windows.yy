@@ -9,7 +9,7 @@
     "option_windows_copy_exe_to_dest": false,
     "option_windows_copyright_info": "(c) 2018 CompanyName",
     "option_windows_description_info": "A GameMaker Studio 2 Game",
-    "option_windows_display_cursor": true,
+    "option_windows_display_cursor": false,
     "option_windows_display_name": "Race To Saturn",
     "option_windows_enable_steam": false,
     "option_windows_executable_name": "${project_name}",
@@ -29,9 +29,9 @@
     "option_windows_texture_page": "2048x2048",
     "option_windows_use_splash": false,
     "option_windows_version": {
-        "build": 3,
+        "build": 0,
         "major": 0,
-        "minor": 4,
+        "minor": 5,
         "revision": 0
     },
     "option_windows_vsync": false

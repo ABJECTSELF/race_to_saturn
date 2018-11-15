@@ -22,9 +22,9 @@ var xpos;	//This value determines what position the mouse is on the slider bar.
 
 	draw_healthbar(lEdge, hiEdge, rEdge, loEdge, value, c_black, c_gray, c_blue, 0.0, true, true);
 	
-	if point_in_rectangle(window_mouse_get_x(),window_mouse_get_y(), lEdge, hiEdge, rEdge, loEdge){
+	if point_in_rectangle(window_mouse_get_x(),window_mouse_get_y(), lEdge, hiEdge - 10, rEdge, loEdge + 10){
 		if (mouse_check_button(mb_left)){
-			draw_sprite_ext(spr_button, 0, window_mouse_get_x(), y_center, 0.4, 0.4, 0, image_blend, image_alpha);
+			draw_sprite_ext(spr_button, 0, window_mouse_get_x(), y_center, 0.375, 0.375, 0, image_blend, image_alpha);
 			return xpos;
 			}
 		else{
@@ -32,5 +32,5 @@ var xpos;	//This value determines what position the mouse is on the slider bar.
 			return value;
 			}
 		}
-	draw_sprite_ext(spr_button, 0, (lEdge + length*(value/100)), y_center, 0.3, 0.3, 180, image_blend, image_alpha);	
+	draw_sprite_ext(spr_button, 0, (lEdge + length*(value/100)), y_center, 0.4, 0.4, 180, image_blend, image_alpha);	
 	return value;	
