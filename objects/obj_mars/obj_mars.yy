@@ -86,7 +86,7 @@
             "mvc": "1.0",
             "objectId": "76b4a305-bcb0-4fc2-bb23-69bdf984bacc",
             "propertyId": "8c825c62-696a-4ee8-8b12-ad33ee0401f4",
-            "value": "he"
+            "value": "au"
         },
         {
             "id": "5c9ad260-2dca-4218-8c69-4b168c3726df",
@@ -102,7 +102,7 @@
             "mvc": "1.0",
             "objectId": "76b4a305-bcb0-4fc2-bb23-69bdf984bacc",
             "propertyId": "0c7ed306-0d92-46bd-bf0e-e2011ab312db",
-            "value": "ar"
+            "value": "li"
         }
     ],
     "parentObjectId": "76b4a305-bcb0-4fc2-bb23-69bdf984bacc",

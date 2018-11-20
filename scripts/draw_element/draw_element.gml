@@ -11,14 +11,14 @@ eID = argument2;
 nValue = argument3;
 
 //Determine sprite to use.
-if eID = "ar"
-	eSprite = spr_element_ar;
-else if eID = "he"
-	eSprite = spr_element_he;
+if eID = "li"
+	eSprite = spr_element_li;
+else if eID = "au"
+	eSprite = spr_element_au;
 else if eID = "h"
 	eSprite = spr_element_h;
-else if eID = "mg"
-	eSprite = spr_element_mg;
+else if eID = "al"
+	eSprite = spr_element_al;
 else if eID = "n"
 	eSprite = spr_element_n;
 else if eID = "o"

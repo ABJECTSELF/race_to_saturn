@@ -1,5 +1,8 @@
-/// @description Insert description here
-// You can write your code in this editor
+/// @description Scan planet
+
+//Minimize scanbox if option is set.
+if (global.scanbox_opn = 0 && scanbox_override == false)
+	window_min = true;
 
 if (isScanning && !scanned){
 	if (percentScanned >= 0.95){

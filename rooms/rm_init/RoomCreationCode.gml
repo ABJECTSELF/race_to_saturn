@@ -24,6 +24,8 @@ global.name = "Player"	//Player's name for scoreboard.
 global.mouseTarget = obj_earth; //Targeted scan object.
 
 	global.stars = 3000;		//Number of stars per second.
+	global.orbit_circ = 1;		//Setting for orbit circles (0 = off, 1 = outline, 2 = full)
+	global.scanbox_opn = 2;		//Setting for scan boxes (0 = always minimized, 1 = minimized after depletion, 2 = always open)
 	global.difficulty = 2;		//Difficulty setting.
 	global.volume_mus = 1;		//Volume for music.
 	global.volume_sfx = 1;		//Volume for sound effects.

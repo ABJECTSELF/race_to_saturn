@@ -77,8 +77,9 @@ if (target.window_min == true)
 	if (point_in_rectangle(mouse_x, mouse_y, 
 		obj_player.x + originx + 105, obj_player.y + originy - 105, 
 		obj_player.x + originx + 155, obj_player.y + originy - 55) 
-		&& (mouse_check_button_released(mb_left)))
-		target.window_min = false;
+		&& (mouse_check_button_released(mb_left))){
+			target.window_min = false;
+			target.scanbox_override = true;}
 	return;
 	}
 	
@@ -87,7 +88,7 @@ draw_set_color(c_white);
 //Lower left corner
 if (obj_player.x + originx-150 > target.x || obj_player.y  + originy+110 < target.y){
 	draw_line(target.x, target.y, 
-			obj_player.x + originx-125, 
+			obj_player.x + originx-150, 
 			obj_player.y + originy+110);
 	}
 //Upper right corner
@@ -121,8 +122,9 @@ draw_GUIbox(obj_player.x + originx + 130, obj_player.y + originy - 80, 25, 25, "
 if (point_in_rectangle(mouse_x, mouse_y, 
 	obj_player.x + originx + 105, obj_player.y + originy - 105, 
 	obj_player.x + originx + 155, obj_player.y + originy - 55) 
-	&& (mouse_check_button_released(mb_left)))
-	target.window_min = true;
+	&& (mouse_check_button_released(mb_left))){
+		target.window_min = true;
+		target.scanbox_override = true;}
 	
 //Populate box with information.
 //Use center coordinates as a reference for location.

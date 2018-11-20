@@ -19,7 +19,7 @@ var lEdge, hiEdge, rEdge, loEdge;	//Variables used for the left, top, right, and
 	lEdge = x_center - (width/2);
 	hiEdge = y_center - (height/2);
 	rEdge = x_center + (width/2);
-	loEdge = y_center + (width/2);
+	loEdge = y_center + (height/2);
 
 
 	var prevColor = draw_get_color(); //Store the current draw color so we can revert to it later.
@@ -45,7 +45,7 @@ var lEdge, hiEdge, rEdge, loEdge;	//Variables used for the left, top, right, and
 	//Draw text in center of box using default color.
 	//Note that font should be set before calling this function.
 	draw_set_halign(fa_center);
-	draw_text(x_center, y_center, text);
+	draw_text(x_center, y_center - 10, text);
 
 	//Draw sprite.
 	draw_sprite_ext(sprite, 0, x_center, y_center, 1, 1, 0, image_blend, image_alpha);	

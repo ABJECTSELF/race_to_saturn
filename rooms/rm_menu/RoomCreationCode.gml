@@ -19,10 +19,10 @@ global.pulse = 100;			//Current number of Impulse charges
 global.max_pulse = 100;		//Maximum number of Impulse charges.
 
 //Reset Element inventory.
-global.elem_ar = 0;
+global.elem_au = 0;
 global.elem_h = 0;
-global.elem_he = 0;
-global.elem_mg = 0;
+global.elem_li = 0;
+global.elem_al = 0;
 global.elem_n = 0;
 global.elem_o = 0;
 global.elem_po = 0;

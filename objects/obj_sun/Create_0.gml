@@ -1,5 +1,6 @@
 /// @description Set orbit
-var orb;
+scanbox_override = false; //Player has not yet set scanbox window themselves.
+
 var obj;
 p_id = "";
 

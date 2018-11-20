@@ -16,7 +16,7 @@ var button;
 if global.menu_type == 0{
 	draw_text(
 		htotal * 0.55,
-		vtotal * 0.25, "v0.50");	
+		vtotal * 0.25, "v" + string(GM_version));	
 	draw_text(
 		htotal * 0.25,
 		vtotal * 0.30, "by Jonathan Cwiok");	

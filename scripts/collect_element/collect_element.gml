@@ -6,10 +6,10 @@ var eID, amount;
 eID = argument0;
 amount = argument1;
 
-if eID = "ar"
-	global.elem_ar += amount;
-else if eID = "he"
-	global.elem_he += amount;
+if eID = "li"
+	global.elem_li += amount;
+else if eID = "au"
+	global.elem_au += amount;
 else if eID = "h"
 	global.elem_h += amount;
 else if eID = "mg"
