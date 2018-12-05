@@ -1,5 +1,5 @@
-//menu_options()
-//Opens the options menu.
+ //menu_options()
+/// @description Opens the options menu.
 //Allows player to adjust music, sfx, and star density.
 //Future modifications could allow player to adjust network settings, display size, etc.
 

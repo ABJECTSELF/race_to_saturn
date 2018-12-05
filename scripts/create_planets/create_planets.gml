@@ -1,7 +1,7 @@
 ///create_planets()
 //This script generates planets in the solar system at a random angle relative to where Earth was created.
 //The result should be that Earth and Saturn are on opposite edges of the map.
-var planet = array_args(obj_mercury, obj_venus, obj_earth, obj_mars, obj_jupiter, obj_saturn);
+var planet = planetList;
 var p_layer = "Instances";
 var xloc = 7500;
 var yloc = 0;

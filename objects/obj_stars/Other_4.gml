@@ -35,3 +35,4 @@ part_emitter_region(starfield, star_emitter,
 //part_emitter_stream(starfield, star_emitter, star, 1);
 */
 alarm[0] = room_speed;
+

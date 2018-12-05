@@ -63,7 +63,7 @@
     "physicsDensity": 0,
     "physicsFriction": 0.2,
     "physicsGroup": 0,
-    "physicsKinematic": false,
+    "physicsKinematic": true,
     "physicsLinearDamping": 0.1,
     "physicsObject": true,
     "physicsRestitution": 0.1,
@@ -482,6 +482,20 @@
             "value": "0",
             "varName": "eValue_5",
             "varType": 1
+        },
+        {
+            "id": "943eff0a-b16e-4d7a-a1b8-70b9a65baf27",
+            "modelName": "GMObjectProperty",
+            "mvc": "1.0",
+            "listItems": null,
+            "multiselect": false,
+            "rangeEnabled": false,
+            "rangeMax": 10,
+            "rangeMin": 0,
+            "resourceFilter": 1023,
+            "value": "0.75",
+            "varName": "orb_alpha",
+            "varType": 0
         }
     ],
     "solid": false,

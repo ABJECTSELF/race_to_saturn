@@ -1,4 +1,4 @@
-/// @description Draw GUI
+  /// @description Draw GUI
 if !object_exists(obj_player)
 	return;		//Stop here if there is no player object.
 
@@ -101,10 +101,24 @@ draw_line(htotal*0.25, vtotal*0.96, htotal*0.25, vtotal*0.93);
 /////////////////////////////////////////////////////////
 //										LOWER RIGHT BAR//
 /////////////////////////////////////////////////////////
+//Module selection and upgrade box.
+/*
+draw_text(
+	htotal*0.78,
+	vtotal*.96, "MODULES");
+draw_line(htotal*0.70, vtotal*0.96, htotal*0.86, vtotal*0.96);
+draw_line(htotal*0.70, vtotal*0.96, htotal*0.70, vtotal*0.93);
+draw_line(htotal*0.86, vtotal*0.96, htotal*0.86, vtotal*0.93);
+
+draw_sprite(spr_mod_soliton, image_index, htotal*0.72, vtotal*0.935);
+draw_sprite(spr_mod_tether, image_index, htotal*0.75, vtotal*0.935);
+draw_sprite(spr_mod_laser, image_index, htotal*0.78, vtotal*0.935);
+draw_sprite(spr_mod_vacuum, image_index, htotal*0.81, vtotal*0.935);
+draw_sprite(spr_mod_drone, image_index, htotal*0.84, vtotal*0.935);
 
 draw_set_font(fnt_menu);
-draw_GUIbox(htotal*0.85, vtotal*0.95, 40, 40, "", spr_upgrade, c_black, c_gray, true);
-
+draw_GUIbox(htotal*0.90, vtotal*0.95, 40, 40, "", spr_upgrade, c_black, c_gray, true);
+*/
 
 
 
@@ -166,7 +180,7 @@ return;
 }
 
 //Currently targeted planet.
-var planet = array_args(obj_mercury, obj_venus, obj_earth, obj_mars, obj_jupiter, obj_saturn);
+var planet = obj_world.planetList;
 var target = planet[global.p_target];
 var p_distance = (point_distance(obj_player.x, obj_player.y, target.x, target.y) - (target.sprite_height/2)) *.0006684
 	draw_set_colour(c_gray);

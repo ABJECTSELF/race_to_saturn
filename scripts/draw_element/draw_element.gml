@@ -1,9 +1,16 @@
 //draw_element(x, y, element, value)
-//Draws the icon for an element and a number value.
-//Value could correspond to how much of element is
-//in inventory, on a planet, or how much is required
-//for an upgrade.
-//Draw this number so that it fits in the icon box.
+/// @description Draws the icon for an element and a number value.
+/// @param x
+/// @param y
+/// @param element
+/// @param value
+
+/*Value could correspond to how much of element is
+in inventory, on a planet, or how much is required
+for an upgrade.
+Draw this number so that it fits in the icon box.
+*/
+
 var eX, eY, eID, eSprite, nValue;
 eX = argument0;
 eY = argument1;

@@ -88,7 +88,7 @@ draw_set_alpha(1);
 
 	
 //Draw guide arrow
-var planet = array_args(obj_mercury, obj_venus, obj_earth, obj_mars, obj_jupiter, obj_saturn);
+var planet = obj_world.planetList;
 var arw_target = planet[global.p_target];
 if object_exists(arw_target){
 with (obj_player){

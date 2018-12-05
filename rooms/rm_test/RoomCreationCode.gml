@@ -18,5 +18,5 @@ global.max_pulse = 9;		//Maximum number of Impulse charges.
 global.p_target = 0;		//Current planet target
 
 //The following delcares arrays used for other scripts.
-global.planet = array_args(obj_mercury, obj_venus, obj_earth, obj_mars, obj_jupiter, obj_saturn); //Array of all target planets.
-global.obstacles = array_args(obj_ufo, obj_comet_small, obj_comet_med, obj_comet_large, obj_hubble, obj_satellite); //Array of all obstacles
+global.planet = array_args(obj_mercury, obj_venus, obj_earth, obj_mars, obj_jupiter, obj_saturn, obj_uranus, obj_neptune, obj_pluto); //Array of all target planets.
+global.obstacles = array_args(obj_ufo, obj_comet_small, obj_comet_med, obj_comet_large, obj_satellite); //Array of all obstacles

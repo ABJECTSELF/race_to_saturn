@@ -5,7 +5,7 @@ if global.ents >= global.max_ents
 	
 var ent_id, index, xloc, xangle;
 
-index = irandom(5);					//Which obstacle from array to generate.
+index = irandom(4);					//Which obstacle from array to generate.
 ent_id = global.obstacles[index];	//ID of chosen obstacle.
 xloc = random_range(5000, 9500);	//Distance to player.
 xangle = irandom_range(0, 359);		//Range around player.

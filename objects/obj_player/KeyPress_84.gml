@@ -1,0 +1,6 @@
+///////////////////////////////////////////////////////////
+/// @description Change target	(dev ability)					   ////
+/////////////////////////////////////////////////////////// 
+		//Find the next unexplored planet and set as target.
+		//while global.planet[global.p_target].explored == true 
+				//global.p_target++;

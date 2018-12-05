@@ -1,6 +1,14 @@
 //draw_GUIbox(x_center, y_center, width, height, text, sprite, color1, color2, isButton);
-//Create a GUI box that can store a sprite, text, and button functionality.
-//Intended to be a faster way to create GUI elements.
+/// @description Create a GUI box that can store a sprite, text, and button functionality.
+/// @param x_center
+/// @param y_center
+/// @param width
+/// @param height
+/// @param text
+/// @param sprite
+/// @param color1
+/// @param color2
+/// @param isButton
 //Use TRUE or FALSE values to determine whether button is active.
 var x_center, y_center, width, height, text, sprite, color1, color2, isButton;
 

@@ -1,5 +1,5 @@
 //input_name()
-//Opens the dialogue box for the player to input their name, select difficulty, and change appearance.
+/// @description Opens the dialogue box for the player to input their name, select difficulty, and change appearance.
 //This name value is later used in the Scoreboard.
 var htotal = window_get_width();
 var vtotal = window_get_height();

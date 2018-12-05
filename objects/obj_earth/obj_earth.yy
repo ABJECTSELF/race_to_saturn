@@ -78,7 +78,7 @@
             "mvc": "1.0",
             "objectId": "76b4a305-bcb0-4fc2-bb23-69bdf984bacc",
             "propertyId": "895477ef-cce4-45d9-92e5-3accc0608ec6",
-            "value": "Unstable Climate"
+            "value": "None"
         },
         {
             "id": "cd0b4d9b-43df-429c-88ea-9743fe7ae691",
@@ -86,7 +86,7 @@
             "mvc": "1.0",
             "objectId": "76b4a305-bcb0-4fc2-bb23-69bdf984bacc",
             "propertyId": "95ce173a-4f6a-49a9-81e9-077a81c0d7f2",
-            "value": "1"
+            "value": "0"
         },
         {
             "id": "fdd8221f-b681-4d8b-91d2-8a2808b54655",
@@ -175,7 +175,7 @@
     "physicsDensity": 5.51,
     "physicsFriction": 0.2,
     "physicsGroup": 0,
-    "physicsKinematic": false,
+    "physicsKinematic": true,
     "physicsLinearDamping": 0.1,
     "physicsObject": true,
     "physicsRestitution": 0.1,

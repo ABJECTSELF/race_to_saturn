@@ -1,5 +1,6 @@
 //fade_screen(alpha)
-//Instantly creates a black screen over the player's view.
+/// @description Instantly creates a black screen over the player's view.
+/// @param alpha
 var nAlpha = argument0;
 
 draw_set_color(c_black);

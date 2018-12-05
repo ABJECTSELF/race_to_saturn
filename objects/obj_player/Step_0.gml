@@ -1,5 +1,5 @@
 /// @description Move probe
-player_move()
+player_move();
 
 ///Keep position updated for sounds.
 audio_listener_position(x, y, 0);
@@ -19,12 +19,10 @@ if global.pwr <= 1 && end_game != true	//If out of power, game over.
 global.prb_speed = phy_speed * 10;
 
 //Limit player propulsion after 10 pixels per second
-if phy_speed > 10 && phy_linear_damping < 0.3
-   {
-   phy_linear_damping += 0.0001
-   }
+//Make sure player is not facing the opposite direction of motion so they can still slow down.
+var angleDif = angle_difference(phy_rotation, point_direction(0, 0, phy_speed_x, phy_speed_y));
+if (phy_speed > 10 	&& (angleDif < -90	|| angleDif > 90))
+   global.prb_propel = 30*(1-(phy_speed - 10)/10);///Limit by percentage of speed that is between 10-20.
 else
-   {
-   phy_linear_damping = 0.001;
-   }
+	global.prb_propel = 30;
    

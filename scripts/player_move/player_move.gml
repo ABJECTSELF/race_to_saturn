@@ -17,7 +17,9 @@ if global.fuel <= 0|| (
 if (keyboard_check(vk_up) || keyboard_check(ord("W"))){	    //Forward Movement
 sprite_index = spr_probe_fwd;
 physics_apply_local_force(-100, 0, global.prb_propel, 0);
-effect_create_below(ef_smoke, x + lengthdir_x(-20, image_angle * -1), y + lengthdir_y(-20, image_angle), 0.75, c_gray);
+effect_create_below(ef_smoke, x + lengthdir_x(-20, image_angle * -1), 
+								y + lengthdir_y(-20, image_angle), 
+								0.75, c_gray);
 
 global.fuel -= f_use;
 fuel_used += f_use;

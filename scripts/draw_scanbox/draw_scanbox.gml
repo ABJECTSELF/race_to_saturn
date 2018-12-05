@@ -1,5 +1,7 @@
 //draw_scanbox(target, percentScanned)
-//Draws the information window after scanning an object.
+/// @description Draws the information window after scanning an object.
+/// @param target Object which scanbox displays information from.
+/// @param percentScanned How much scanning has been completed.
 var target = argument0;
 var percentScanned = argument1;
 
@@ -131,6 +133,9 @@ if (point_in_rectangle(mouse_x, mouse_y,
 //Object name is in a large font, the rest are smaller.
 //For each field, if scan is not past a certain threshold, a randomized string will display instead.
 draw_set_font(fnt_menu);
+//Use smaller font if name is too long.
+if (string_length(myName) > 6)
+	draw_set_font(fnt_menu_s);
 draw_set_alpha(1+opacity);
 draw_set_color(c_white);
 draw_set_halign(fa_left);

@@ -1,6 +1,10 @@
 //draw_GUIslider(x_center, y_center, length, sprite, value);
-//Create a GUI slider that can be used to alter game options.
-//Intended to be a faster way to create GUI elements.
+/// @description Create a GUI slider that can be used to alter game options.
+/// @param x_center X location of the center of the slider.
+/// @param y_center Y location of the center of the slider.
+/// @param length Total length of the bar.
+/// @param sprite Sprite to signify the button on the slider.
+/// @param value Value that the slider will adjust.
 
 var x_center, y_center, length, value;
 
