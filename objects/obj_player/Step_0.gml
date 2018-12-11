@@ -1,4 +1,8 @@
 /// @description Move probe
+var linDamp = 0.001; //Default linear damping for probe.
+var dampFactor = .05;//Maximum additional lindear damping for probe.
+var spdPercent = 0;  //Current percent of speed that is above 10px/s.
+
 player_move();
 
 ///Keep position updated for sounds.
@@ -18,11 +22,11 @@ if global.pwr <= 1 && end_game != true	//If out of power, game over.
 //Update speed.
 global.prb_speed = phy_speed * 10;
 
-//Limit player propulsion after 10 pixels per second
-//Make sure player is not facing the opposite direction of motion so they can still slow down.
-var angleDif = angle_difference(phy_rotation, point_direction(0, 0, phy_speed_x, phy_speed_y));
-if (phy_speed > 10 	&& (angleDif < -90	|| angleDif > 90))
-   global.prb_propel = 30*(1-(phy_speed - 10)/10);///Limit by percentage of speed that is between 10-20.
+//Limit player propulsion after 10 pixels per second by increasing linear damping.
+//This is to discourage the player from attempting to reach maximum speed with thrust alone.
+spdPercent = (phy_speed - 10)/10;
+if (phy_speed > 10)
+   phy_linear_damping = linDamp+(dampFactor*spdPercent);///Limit by percentage of speed that is between 10-20.
 else
-	global.prb_propel = 30;
+	phy_linear_damping = linDamp;
    

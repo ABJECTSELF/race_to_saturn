@@ -1,7 +1,7 @@
 ///draw_map()
 //This function creates the solar map
 var sun = obj_sun;
-var planet = array_args(obj_mercury, obj_venus, obj_earth, obj_mars, obj_jupiter, obj_saturn);
+var planet = obj_world.planetList;
 //Draw the star map.
 for (var i = 0; i < array_length_1d(planet); i++)
 	{

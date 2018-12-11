@@ -1,0 +1,1 @@
+scr_camera_create(x, y, 20, 2);
