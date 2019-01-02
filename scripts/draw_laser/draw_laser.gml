@@ -7,8 +7,6 @@ source = argument0;
 range = argument1;
 length = 0;
 
-//Set the depth of the layer to just underneath the player.
-depth = source.depth+1;
 //Find the direction the mouse is located in relation to the player.
 dir = point_direction(source.x, source.y, mouse_x, mouse_y);
 
@@ -32,4 +30,4 @@ part_emitter_burst(impSpark, spark, spark_emitter, irandom_range(25, 100));
 draw_line_width_color(source.x, source.y, 
 					source.x + lengthdir_x(length, dir) +rdmX, 
 					source.y + lengthdir_y(length, dir) +rdmY, 
-					4, c_red, c_black);
+					3, c_red, c_black);

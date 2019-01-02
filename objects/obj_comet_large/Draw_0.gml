@@ -12,7 +12,14 @@ else if (global.orbit_circ == 2)
 	
 draw_set_alpha(1);	
 
-draw_self();
+//If comet is being zapped, make it shake.
+if (isBeingZapped)
+	draw_sprite_ext(sprite_index, image_index, x+irandom(zapOffset), y+irandom(zapOffset),
+					image_xscale, image_yscale, -phy_rotation, image_blend, image_alpha);
+else
+	draw_self();
+	
 var range = sprite_width*2
 if (distance_to_object(obj_player) < range && global.mapmode == false)
 	draw_scanbox(self, percentScanned);
+	

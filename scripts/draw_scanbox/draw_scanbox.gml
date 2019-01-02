@@ -192,9 +192,18 @@ if (percentScanned < 1 && target.scanned != true)
 else{
 	draw_text(obj_player.x + originx-140, obj_player.y + originy+65, "Elements: ");//Elements
 	//From here we draw the element icons based on what elements and amounts are stored on this object.
-	draw_element(obj_player.x + originx-30, obj_player.y + originy+85,	target.eID_1, target.eValue_1);
-	draw_element(obj_player.x + originx + 10, obj_player.y + originy+85,	target.eID_2, target.eValue_2); 
-	draw_element(obj_player.x + originx+50, obj_player.y + originy+85,	target.eID_3, target.eValue_3);
-	draw_element(obj_player.x + originx+90, obj_player.y + originy+85,	target.eID_4, target.eValue_4);//Note: This slot may be blank on most planets
-	draw_element(obj_player.x + originx+130, obj_player.y + originy+85,	target.eID_5, target.eValue_5);//Note: This slot may be blank on most planets.
-	}	
+	if (getIsDepleted(target))
+		draw_text(obj_player.x + originx-40, obj_player.y + originy+65, "Depleted");		
+	draw_set_halign(fa_center);
+	if (target.arrayElements[0] > 0)
+		draw_element(obj_player.x + originx-30, obj_player.y + originy+85,	target.eID_1, target.arrayElements[0]);
+	if (target.arrayElements[1] > 0)	
+		draw_element(obj_player.x + originx + 10, obj_player.y + originy+85, target.eID_2, target.arrayElements[1]);
+	if (target.arrayElements[2] > 0)	
+		draw_element(obj_player.x + originx+50, obj_player.y + originy+85,	target.eID_3, target.arrayElements[2]);
+	if (target.arrayElements[3] > 0)	
+		draw_element(obj_player.x + originx+90, obj_player.y + originy+85,	target.eID_4, target.arrayElements[3]);
+	if (target.arrayElements[4] > 0)	
+		draw_element(obj_player.x + originx+130, obj_player.y + originy+85,	target.eID_5, target.arrayElements[4]);
+}
+	

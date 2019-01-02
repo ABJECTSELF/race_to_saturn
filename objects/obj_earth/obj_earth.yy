@@ -9,14 +9,6 @@
     "maskSpriteId": "00000000-0000-0000-0000-000000000000",
     "overriddenProperties": [
         {
-            "id": "12e6a029-169f-41e5-9cba-0355c1870a94",
-            "modelName": "GMOverriddenProperty",
-            "mvc": "1.0",
-            "objectId": "76b4a305-bcb0-4fc2-bb23-69bdf984bacc",
-            "propertyId": "02d25e98-c6ff-4ece-a8dc-2ec1cc7e023d",
-            "value": "False"
-        },
-        {
             "id": "14ff9cef-ef76-4fa7-98df-cae63158e20f",
             "modelName": "GMOverriddenProperty",
             "mvc": "1.0",
@@ -167,6 +159,22 @@
             "objectId": "76b4a305-bcb0-4fc2-bb23-69bdf984bacc",
             "propertyId": "73503ef5-467f-4796-98d6-f294521ccee3",
             "value": "5"
+        },
+        {
+            "id": "4c84ae98-96a6-45ca-849a-86ad125902b4",
+            "modelName": "GMOverriddenProperty",
+            "mvc": "1.0",
+            "objectId": "76b4a305-bcb0-4fc2-bb23-69bdf984bacc",
+            "propertyId": "5930aece-0937-4110-bbc8-fae641515614",
+            "value": "type_terra"
+        },
+        {
+            "id": "db9caed0-b2bc-471d-98b6-ff939414dc4f",
+            "modelName": "GMOverriddenProperty",
+            "mvc": "1.0",
+            "objectId": "76b4a305-bcb0-4fc2-bb23-69bdf984bacc",
+            "propertyId": "02d25e98-c6ff-4ece-a8dc-2ec1cc7e023d",
+            "value": "False"
         }
     ],
     "parentObjectId": "76b4a305-bcb0-4fc2-bb23-69bdf984bacc",

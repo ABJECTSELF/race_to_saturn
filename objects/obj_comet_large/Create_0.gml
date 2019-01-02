@@ -12,7 +12,6 @@ orbit_total = 0;	//The total amount of the orbit the player has completed (0-360
 orbit_zenith = false;//Whether player has reached this orbit's zenith point (180 degrees)
 scanbox_override = false; //Player has not yet set scanbox window themselves.
 
-
 //Randomize Characteristics
 p_size = irandom_range(40,500);
 p_density = random_range(0.8, 3.0);
@@ -23,6 +22,9 @@ p_threatLevel = 0;
 p_threatType = "";
 p_type = "Asteroid";
 p_name = obj_name;
+
+//Generate elements
+generate_elements(elemType, p_density, p_size);
 
 //Next, apply standard movement forces.
 alarm[1] = room_speed;

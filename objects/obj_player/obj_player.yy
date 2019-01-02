@@ -283,6 +283,16 @@
             "enumb": 84,
             "eventtype": 9,
             "m_owner": "8ed12dbe-d200-40ba-b0b5-8f9599d6c737"
+        },
+        {
+            "id": "e9439ec7-9e8b-4234-b95c-0b0237950edc",
+            "modelName": "GMEvent",
+            "mvc": "1.0",
+            "IsDnD": false,
+            "collisionObjectId": "00000000-0000-0000-0000-000000000000",
+            "enumb": 0,
+            "eventtype": 8,
+            "m_owner": "8ed12dbe-d200-40ba-b0b5-8f9599d6c737"
         }
     ],
     "maskSpriteId": "00000000-0000-0000-0000-000000000000",
@@ -386,6 +396,20 @@
             "value": "",
             "varName": "floatText",
             "varType": 2
+        },
+        {
+            "id": "2816df2b-dcfc-45d9-98c1-108be0bd7ef7",
+            "modelName": "GMObjectProperty",
+            "mvc": "1.0",
+            "listItems": null,
+            "multiselect": false,
+            "rangeEnabled": false,
+            "rangeMax": 10,
+            "rangeMin": 0,
+            "resourceFilter": 1023,
+            "value": "300",
+            "varName": "laser_range",
+            "varType": 1
         }
     ],
     "solid": false,

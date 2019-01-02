@@ -1,7 +1,7 @@
 /// @description Collide
 with (other)
 {
-	physics_apply_force(x,y,0,-30);	
+	//physics_apply_force(x,y,0,-30);	
 }
 
 with (obj_camera) shake = global.prb_speed/2;
@@ -22,3 +22,8 @@ if global.difficulty == 3 && phy_speed > 3.0 && end_game == false{
 	end_game = true;
 	alarm[3] = room_speed;
 	}
+	
+//If stopped on planet, land and collect elements.
+else if phy_speed < 0.5{
+	other.alarm[0] = room_speed/2;
+}

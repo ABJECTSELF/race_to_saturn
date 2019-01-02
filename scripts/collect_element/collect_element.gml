@@ -1,5 +1,7 @@
 //collect_element(eID, amount);
-//Adds a number of an element to player's resources.
+/// @description Adds a number of an element to player's resources.
+/// @param eID
+/// @param amount
 //NOTE: Negative amounts can be used to deduct resources as well.
 var eID, amount;
 
@@ -12,8 +14,8 @@ else if eID = "au"
 	global.elem_au += amount;
 else if eID = "h"
 	global.elem_h += amount;
-else if eID = "mg"
-	global.elem_mg += amount;
+else if eID = "al"
+	global.elem_al += amount;
 else if eID = "n"
 	global.elem_n += amount;
 else if eID = "o"

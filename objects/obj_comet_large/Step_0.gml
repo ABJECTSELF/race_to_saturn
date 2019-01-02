@@ -90,4 +90,21 @@ if alpha_dec == true
 
 else
 	orb_alpha += 0.001;
-	
+
+
+//Check for collision with player laser.
+if (mouse_check_button(mb_left) && distance_to_object(obj_player) < (obj_player.laser_range)/2){
+	isBeingZapped = true;
+	zapOffset += 0.05;
+	//if zapOffset gets too high, the object explodes.
+	if (zapOffset > zapLimit)
+		crash();
+	if (zapTimer == false){
+		alarm[0] = room_speed/2;
+		zapTimer = true;
+		}
+	}
+else{
+	isBeingZapped = false;
+	zapOffset = 0;
+	}

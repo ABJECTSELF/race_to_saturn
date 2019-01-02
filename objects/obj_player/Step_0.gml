@@ -10,6 +10,8 @@ audio_listener_position(x, y, 0);
 
 //Expend power.
 var p_use = global.prate;
+if mouse_check_button(mb_left)
+	p_use = p_use*2; //Double power consumption if laser is being fired.
 global.pwr -= p_use; //Decrement power amount by global factor
 
 if global.pwr <= 1 && end_game != true	//If out of power, game over.

@@ -19,13 +19,13 @@ global.pulse = 100;			//Current number of Impulse charges
 global.max_pulse = 100;		//Maximum number of Impulse charges.
 
 //Reset Element inventory.
-global.elem_au = 0;
-global.elem_h = 0;
-global.elem_li = 0;
-global.elem_al = 0;
-global.elem_n = 0;
-global.elem_o = 0;
-global.elem_po = 0;
-global.elem_xe = 0;
+global.elem_au = clamp(3, 0, 99);
+global.elem_h = clamp(6, 0, 99);;
+global.elem_li = clamp(3, 0, 99);;
+global.elem_al = clamp(3, 0, 99);;
+global.elem_n = clamp(3, 0, 99);;
+global.elem_o = clamp(3, 0, 99);;
+global.elem_po = clamp(3, 0, 99);;
+global.elem_xe = clamp(3, 0, 99);;
 
 	global.song = mus_landsea;	//The currently-active music track;

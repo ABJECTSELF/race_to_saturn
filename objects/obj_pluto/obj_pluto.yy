@@ -111,6 +111,14 @@
             "objectId": "76b4a305-bcb0-4fc2-bb23-69bdf984bacc",
             "propertyId": "95ce173a-4f6a-49a9-81e9-077a81c0d7f2",
             "value": "0"
+        },
+        {
+            "id": "71c0de06-5fdb-401a-840a-9ca77b538146",
+            "modelName": "GMOverriddenProperty",
+            "mvc": "1.0",
+            "objectId": "76b4a305-bcb0-4fc2-bb23-69bdf984bacc",
+            "propertyId": "5930aece-0937-4110-bbc8-fae641515614",
+            "value": "type_metal"
         }
     ],
     "parentObjectId": "76b4a305-bcb0-4fc2-bb23-69bdf984bacc",
